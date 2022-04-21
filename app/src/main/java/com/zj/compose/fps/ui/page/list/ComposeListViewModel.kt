@@ -5,16 +5,17 @@ import androidx.lifecycle.ViewModel
 class ComposeListViewModel : ViewModel() {
     fun produceItems(): List<IFeedItem> {
         val products = ArrayList<IFeedItem>()
+        val url = "https://pic2.zhimg.com/80/v2-b7f8e2a6554bad1f6fba6e2bc8e91230_720w.jpg?source=1940ef5c"
         products.add(
             BannerList(
                 list = listOf(
                     Banner(
                         title = "PS5国行光驱版 现货 本地直发",
-                        cover = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                        cover = url
                     ),
                     Banner(
                         title = "PS5国行光驱版 现货 本地直发",
-                        cover = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                        cover = url
                     )
                 )
             )
@@ -25,7 +26,7 @@ class ComposeListViewModel : ViewModel() {
                     products.add(
                         Video(
                             title = "PS5国行光驱版 现货 本地直发",
-                            cover = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                            cover = url
                         )
                     )
                 }
@@ -33,9 +34,9 @@ class ComposeListViewModel : ViewModel() {
                     products.add(
                         MultiImage(
                             content = "PS5国行光驱版 现货 本地直发",
-                            images = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp,https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp,https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                            images = "${url},${url},${url}",
                             tag = Tag(
-                                userAvatar = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                                userAvatar = url,
                                 userName = "ITHome",
                                 tagName = "新闻"
                             ),
@@ -47,9 +48,9 @@ class ComposeListViewModel : ViewModel() {
                     products.add(
                         Cover(
                             title = "PS5国行光驱版 现货 本地直发",
-                            cover = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                            cover = url,
                             tag = Tag(
-                                userAvatar = "https://s.yimg.com/uu/api/res/1.2/npZqSAjccPy8bJGFWCylTA--~B/Zmk9ZmlsbDtoPTQ1MDt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-04/bc131410-a8c6-11eb-bfaf-ac07b6db3386.cf.webp",
+                                userAvatar = url,
                                 userName = "ITHome",
                                 tagName = "新闻"
                             ),
