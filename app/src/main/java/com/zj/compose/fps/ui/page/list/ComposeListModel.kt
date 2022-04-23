@@ -2,9 +2,9 @@ package com.zj.compose.fps.ui.page.list
 
 sealed interface IFeedItem
 
-data class BannerList(val list: List<Banner>) : IFeedItem
+data class BannerList(val list: List<BannerItem>) : IFeedItem
 
-data class Banner(
+data class BannerItem(
     val title: String,
     val cover: String,
 )

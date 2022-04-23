@@ -15,7 +15,7 @@ fun FpsMonitor(modifier: Modifier) {
     var lastUpdate by remember { mutableStateOf(0L) }
     Text(
         text = "Fps: $fps", modifier = modifier
-            .size(30.dp), color = Color.Red, style = MaterialTheme.typography.body1
+            .size(60.dp), color = Color.Red, style = MaterialTheme.typography.body1
     )
 
     LaunchedEffect(Unit) {

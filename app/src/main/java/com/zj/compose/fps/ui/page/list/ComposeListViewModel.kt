@@ -9,11 +9,11 @@ class ComposeListViewModel : ViewModel() {
         products.add(
             BannerList(
                 list = listOf(
-                    Banner(
+                    BannerItem(
                         title = "PS5国行光驱版 现货 本地直发",
                         cover = url
                     ),
-                    Banner(
+                    BannerItem(
                         title = "PS5国行光驱版 现货 本地直发",
                         cover = url
                     )

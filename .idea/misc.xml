@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../layout/compose-model-1650504259323.xml" value="0.532520325203252" />
-        <entry key="app/src/main/res/layout/activity_recyclerview.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/activity_recyclerview.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/layout_feed_banner_list.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/layout_feed_bottom.xml" value="1.3042763157894737" />
+        <entry key="app/src/main/res/layout/layout_feed_cover.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/layout_feed_header.xml" value="0.3234375" />
+        <entry key="app/src/main/res/layout/layout_feed_multi_image.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/layout_feed_video.xml" value="0.16458333333333333" />
       </map>
     </option>
   </component>
