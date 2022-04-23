@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.zj.compose.fps.ui.page.list.ComposeListActivity
 import com.zj.compose.fps.ui.theme.ComposefpsTheme
+import com.zj.view.page.recyclerview.RecyclerViewActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +49,18 @@ fun ItemList() {
             onClick = {
                 context.startActivity(Intent(context, ComposeListActivity::class.java))
             }) {
-            Text(text = "ComposeList Fps测试")
+            Text(text = "Compose List Fps测试")
+        }
+
+        Button(modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+            .height(44.dp)
+            .clip(RoundedCornerShape(16)),
+            onClick = {
+                context.startActivity(Intent(context, RecyclerViewActivity::class.java))
+            }) {
+            Text(text = "RecyclerView List Fps测试")
         }
     }
 }

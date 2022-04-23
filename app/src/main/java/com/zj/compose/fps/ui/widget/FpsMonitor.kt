@@ -14,7 +14,7 @@ fun FpsMonitor(modifier: Modifier) {
     var fps by remember { mutableStateOf(0) }
     var lastUpdate by remember { mutableStateOf(0L) }
     Text(
-        text = fps.toString(), modifier = modifier
+        text = "Fps: $fps", modifier = modifier
             .size(30.dp), color = Color.Red, style = MaterialTheme.typography.body1
     )
 

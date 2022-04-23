@@ -3,7 +3,7 @@ package com.zj.view.page
 import android.util.Log
 import android.view.Choreographer
 
-object FpsMonitor {
+object ViewFpsMonitor {
     private val fpsRunnable by lazy { FpsRunnable() }
     private val listeners = arrayListOf<(Int) -> Unit>()
     private var isFpsOpen = false
