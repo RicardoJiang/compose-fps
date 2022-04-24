@@ -5,10 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.zj.compose.fps.R
-import com.zj.compose.fps.ui.page.list.BannerList
-import com.zj.compose.fps.ui.page.list.Cover
-import com.zj.compose.fps.ui.page.list.IFeedItem
-import com.zj.compose.fps.ui.page.list.MultiImage
+import com.zj.compose.fps.ui.page.list.*
 
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -22,28 +19,46 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     @SuppressLint("InflateParams")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return when(viewType){
+        return when (viewType) {
             FeedItemType.Cover.type -> {
-                CoverViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_feed_cover,null))
+                CoverViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.layout_feed_cover, parent, false)
+                )
             }
             FeedItemType.BannerList.type -> {
-                BannerListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_feed_banner_list,null))
+                BannerListViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.layout_feed_banner_list, parent, false)
+                )
             }
             FeedItemType.MultiImage.type -> {
-                MultiImageViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_feed_multi_image,null))
+                MultiImageViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.layout_feed_multi_image, parent, false)
+                )
             }
             else -> {
-                VideoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.layout_feed_video,null))
+                VideoViewHolder(
+                    LayoutInflater.from(parent.context)
+                        .inflate(R.layout.layout_feed_video, parent, false)
+                )
             }
         }
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = list[position]
+        when (holder) {
+            is CoverViewHolder -> holder.setCover(item as Cover)
+            is BannerListViewHolder -> holder.setBanner(item as BannerList)
+            is MultiImageViewHolder -> holder.setMultiImage(item as MultiImage)
+            is VideoViewHolder -> holder.setVideo(item as Video)
+        }
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return list.size
     }
 
     override fun getItemViewType(position: Int): Int {

@@ -14,28 +14,31 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:dividerPadding="5dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/iv_one"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleType="centerCrop"
             tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/iv_two"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="10dp"
             tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/iv_three"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleType="centerCrop"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 
