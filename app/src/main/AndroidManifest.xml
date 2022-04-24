@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".ui.page.list.ComposeListActivity"/>
         <activity android:name="com.zj.view.page.recyclerview.RecyclerViewActivity"/>
+        <activity android:name=".ui.page.particle.ComposeParticleActivity"/>
     </application>
 
 </manifest>

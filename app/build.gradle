@@ -64,4 +64,9 @@ dependencies {
     implementation 'io.github.youth5201314:banner:2.2.2'
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     kapt 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation("io.data2viz.d2v:color:0.8.12")
+    implementation("io.data2viz.d2v:random:0.8.12")
+    implementation("io.data2viz.d2v:shape:0.8.12")
+    implementation("io.data2viz.d2v:scale:0.8.12")
+    implementation "com.google.accompanist:accompanist-flowlayout:0.23.1"
 }

@@ -16,6 +16,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.zj.compose.fps.ui.page.list.ComposeListActivity
+import com.zj.compose.fps.ui.page.particle.ComposeParticleActivity
 import com.zj.compose.fps.ui.theme.ComposefpsTheme
 import com.zj.view.page.recyclerview.RecyclerViewActivity
 
@@ -25,9 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposefpsTheme {
                 // A surface container using the 'background' color from the theme
-
                 ItemList()
-
             }
         }
     }
@@ -61,6 +60,17 @@ fun ItemList() {
                 context.startActivity(Intent(context, RecyclerViewActivity::class.java))
             }) {
             Text(text = "RecyclerView List Fps测试")
+        }
+
+        Button(modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+            .height(44.dp)
+            .clip(RoundedCornerShape(16)),
+            onClick = {
+                context.startActivity(Intent(context, ComposeParticleActivity::class.java))
+            }) {
+            Text(text = "Compose 粒子动画 Fps测试")
         }
     }
 }
